@@ -11,30 +11,20 @@ package zoo.animals;
  */
 public class Bear extends Animal{
  
-    private String sound;
-    private int legs;
-    private String gender;
-
+    
     public Bear(String gender, int legs, String sound)
     {
+        super(gender, legs, sound);
         this.sound = sound;
         this.gender = gender;
         this.legs = legs;
     }
-
-    
     
     @Override
     public void makeSound()
     {
         System.out.println(sound);
+        
     }
-
-    @Override
-    public int getLegs()
-    {
-        return this.legs;
-    }
-
    
 }

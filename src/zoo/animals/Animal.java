@@ -11,10 +11,26 @@ package zoo.animals;
  */
 public abstract class Animal {
 
-    private String sound;
-    private int legs;
-    private String gender;
+    protected String sound;
+    protected int legs;
+    protected String gender;
+    
+    public Animal(String gender, int legs, String sound)
+    {
+        this.sound = sound;
+        this.gender = gender;
+        this.legs = legs;
+    }
 
-    public abstract int getLegs();
+    public int getLegs()
+    {
+        return this.legs;
+    }
+
+    public String getGender()
+    {
+        return this.gender;
+    }
+    
     public abstract void makeSound();
 }

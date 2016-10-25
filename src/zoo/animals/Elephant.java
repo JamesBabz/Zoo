@@ -11,15 +11,9 @@ package zoo.animals;
  */
 public class Elephant extends Animal{
     
-    private String sound;
-    private int legs;
-    private String gender;
-
     public Elephant(String gender, int legs, String sound)
     {
-        this.sound = sound;
-        this.gender = gender;
-        this.legs = legs;
+        super(gender, legs, sound);
     }
 
     
@@ -35,6 +29,5 @@ public class Elephant extends Animal{
     {
         return this.legs;
     }
-
    
 }

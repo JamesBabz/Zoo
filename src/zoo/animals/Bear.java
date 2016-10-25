@@ -15,9 +15,6 @@ public class Bear extends Animal{
     public Bear(String gender, int legs, String sound)
     {
         super(gender, legs, sound);
-        this.sound = sound;
-        this.gender = gender;
-        this.legs = legs;
     }
     
     @Override

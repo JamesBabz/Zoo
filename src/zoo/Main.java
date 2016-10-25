@@ -5,6 +5,8 @@
  */
 package zoo;
 
+import zoo.animals.*;
+
 /**
  *
  * @author James
@@ -16,7 +18,13 @@ public class Main {
      */
     public static void main(String[] args)
     {
-        // TODO code application logic here
+        Zoo z = new Zoo();
+        z.add(new Lion("male",4,"Roar"));
+        z.add(new Elephant("male",4,"Elephant sound!!!"));
+        z.add(new Bear("female",4,"Grrrr"));
+        
+        z.allAnimalsMakeSound();
+        z.countLegs();
     }
     
 }
